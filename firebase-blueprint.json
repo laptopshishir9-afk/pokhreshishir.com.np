@@ -1,0 +1,67 @@
+{
+  "entities": {
+    "SiteContent": {
+      "title": "SiteContent",
+      "description": "Customizable text content for Shishir Pokhrel's portfolio website",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "heroPrefix": { "type": "string" },
+        "heroName": { "type": "string" },
+        "heroSubtitle": { "type": "string" },
+        "heroIntro": { "type": "string" },
+        "schoolName": { "type": "string" },
+        "schoolLocation": { "type": "string" },
+        "academicMilestone": { "type": "string" },
+        "aboutStory": { "type": "string" },
+        "futureGoal": { "type": "string" },
+        "lastUpdated": { "type": "number" },
+        "updatedBy": { "type": "string" }
+      },
+      "required": ["heroName", "lastUpdated"]
+    },
+    "SiteMedia": {
+      "title": "SiteMedia",
+      "description": "Uploaded profile photo and college logo URLs/data",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "ownerPhoto": { "type": "string" },
+        "collegeLogo": { "type": "string" },
+        "lastUpdated": { "type": "number" },
+        "updatedBy": { "type": "string" }
+      },
+      "required": ["lastUpdated"]
+    },
+    "VisitorMessage": {
+      "title": "VisitorMessage",
+      "description": "Visitor contact inquiries sent from the website",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "subject": { "type": "string" },
+        "message": { "type": "string" },
+        "timestamp": { "type": "number" },
+        "read": { "type": "boolean" },
+        "replied": { "type": "boolean" }
+      },
+      "required": ["name", "email", "message", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/site_content/{contentId}": {
+      "schema": "SiteContent",
+      "description": "Global website text configuration synchronized across all devices"
+    },
+    "/site_media/{mediaId}": {
+      "schema": "SiteMedia",
+      "description": "Global website media assets synchronized across all devices"
+    },
+    "/visitor_messages/{messageId}": {
+      "schema": "VisitorMessage",
+      "description": "Inquiries sent by visitors to Shishir Pokhrel"
+    }
+  }
+}

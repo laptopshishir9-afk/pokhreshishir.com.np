@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="200" />
+  
+  <!-- Outer Decorative Ring -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-dasharray="8 6" opacity="0.8" />
+  
+  <!-- Stylized Student Portrait Silhouette -->
+  <!-- Head & Hair -->
+  <circle cx="200" cy="150" r="58" fill="#fde68a" />
+  <!-- Hair Top -->
+  <path d="M142 142 C142 98, 170 78, 200 78 C232 78, 258 98, 258 142 C248 116, 222 108, 200 108 C176 108, 154 118, 142 142 Z" fill="#1e293b" />
+  
+  <!-- Glasses -->
+  <rect x="160" y="140" width="30" height="20" rx="5" fill="none" stroke="#0f172a" stroke-width="4" />
+  <rect x="210" y="140" width="30" height="20" rx="5" fill="none" stroke="#0f172a" stroke-width="4" />
+  <line x1="190" y1="150" x2="210" y2="150" stroke="#0f172a" stroke-width="4" />
+  
+  <!-- Smile -->
+  <path d="M182 178 Q200 192 218 178" fill="none" stroke="#b45309" stroke-width="3.5" stroke-linecap="round" />
+  
+  <!-- Shoulders & Coat -->
+  <path d="M90 340 C100 250, 140 230, 200 230 C260 230, 300 250, 310 340 Z" fill="#0f172a" />
+  <!-- Shirt & Tie -->
+  <polygon points="182,230 218,230 206,300 194,300" fill="#ffffff" />
+  <polygon points="196,242 204,242 206,290 194,290" fill="#dc2626" />
+
+  <!-- Monogram Initials Tag -->
+  <rect x="130" y="325" width="140" height="34" rx="17" fill="#0f172a" stroke="#fbbf24" stroke-width="2" />
+  <text x="200" y="347" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" letter-spacing="1.5">
+    SHISHIR POKHREL
+  </text>
+</svg>

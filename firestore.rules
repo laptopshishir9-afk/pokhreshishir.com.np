@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Website Text Configuration (readable by everyone on all devices, writable by Shishir)
+    match /site_content/{contentId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Website Media (Profile photo & college logo, readable by everyone on all devices)
+    match /site_media/{mediaId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Visitor Messages (anyone can submit inquiry, seat admin manages)
+    match /visitor_messages/{messageId} {
+      allow create: if request.resource.data.name is string && request.resource.data.email is string;
+      allow read, update, delete: if true;
+    }
+  }
+}

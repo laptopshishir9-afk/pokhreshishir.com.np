@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="crestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Shield Shape -->
+  <path d="M150 20 L245 55 C245 180, 150 265, 150 275 C150 265, 55 180, 55 55 Z" fill="url(#crestGrad)" stroke="url(#goldAccent)" stroke-width="6" />
+  
+  <!-- Inner Shield Border -->
+  <path d="M150 35 L230 65 C230 170, 150 245, 150 255 C150 245, 70 170, 70 65 Z" fill="none" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4 3" opacity="0.6" />
+
+  <!-- Mount Everest / Mountain Peak Symbol -->
+  <polygon points="150,75 195,145 105,145" fill="#f8fafc" opacity="0.9" />
+  <polygon points="150,75 168,145 132,145" fill="#e2e8f0" />
+  <polygon points="180,105 215,150 145,150" fill="#38bdf8" opacity="0.8" />
+  <polygon points="120,105 155,150 85,150" fill="#0284c7" opacity="0.8" />
+
+  <!-- Open Book Symbol -->
+  <path d="M100 175 C125 168, 145 172, 150 180 C155 172, 175 168, 200 175 L200 205 C175 198, 155 202, 150 210 C145 202, 125 198, 100 205 Z" fill="#fbbf24" />
+  <line x1="150" y1="180" x2="150" y2="210" stroke="#0f172a" stroke-width="2" />
+
+  <!-- Stars -->
+  <polygon points="150,50 153,58 161,58 155,63 157,71 150,66 143,71 145,63 139,58 147,58" fill="#fbbf24" />
+
+  <!-- Text -->
+  <text x="150" y="235" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" text-anchor="middle" letter-spacing="1">
+    EVEREST SCHOOL
+  </text>
+  <text x="150" y="249" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="0.5">
+    BUTWAL • NEPAL
+  </text>
+</svg>
